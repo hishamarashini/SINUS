@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Products</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/sinus-logo.svg" alt="">
+        </div>
+        <nav class="navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+          <img src="images/icon-bag.svg">
+          <form class="search-form" action="/search" method="GET">
+            <input type="text" name="q" placeholder="Search..." />
+            <button type="submit">search</button>
+          </form>
+        </nav>
+        
+    </header>
+
+    <section>
+        <div class="article-one">
+            <div class="classic">
+                <h2>Classic Sinus Ash</h2>
+                <p class="line-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Aenean consequat ornare ultricies. Vestibulum lobortis tortor 
+                    non tempus pretium. Donec eu tristique arcu, non lacinia justo.
+                    Aenean consequat ornare ultricies. Vestibulum lobortis tortor 
+                    non tempus pretium. Donec eu tristique arcu, non lacinia justo.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+            <div class="classic-1">
+                <img src="images/hoodie-ash.png">
+            </div>
+
+        </div>
+
+        <div class="article-one">
+            <div class="classic">
+                <h2>Classic Sinus Fire</h2>
+                <p class="line-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Aenean consequat ornare ultricies. Vestibulum lobortis tortor 
+                    non tempus pretium. Donec eu tristique arcu, non lacinia justo.
+                    Aenean consequat ornare ultricies. Vestibulum lobortis tortor 
+                    non tempus pretium. Donec eu tristique arcu, non lacinia justo.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+            <div class="classic-1">
+                <img src="images/hoodie-fire.png">
+            </div>
+
+        </div>
+
+        <div class="article-one">
+            <div class="classic">
+                <h2>Classic Sinus Ocean</h2>
+                <p class="line-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Aenean consequat ornare ultricies. Vestibulum lobortis tortor 
+                    non tempus pretium. Donec eu tristique arcu, non lacinia justo.
+                    Aenean consequat ornare ultricies. Vestibulum lobortis tortor 
+                    non tempus pretium. Donec eu tristique arcu, non lacinia justo.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+            <div class="classic-1">
+                <img src="images/hoodie-ocean.png">
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <footer>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <div class="container">
+            <div class="lists">
+                <div class="lists-1">
+                    <h3 style="margin: 5px;">Menu</h3>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            <div class="lists-2">
+                <h3 style="margin: 5px;">Where we are</h3>
+                <p>Sinus Skateboards</p>
+                <p>Railsvägen 13</p>
+                <p>113 37, Rampnäs</p>
+            </div>
+            <div class="lists-3">
+                <h3>Social media</h3>
+                <a href="https://x.com/?&" target="_blank">Twitter</a>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a href="http://Instagram.com/" target="_blank">Instagram</a>
+            </div>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".navigation a");
+        
+            navLinks.forEach((link) => {
+                link.addEventListener("click", function () {
+                    navLinks.forEach((nav) => nav.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+        });
+    </script>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 10px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+    
+</body>
+</html>
